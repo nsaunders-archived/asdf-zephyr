@@ -1,23 +1,14 @@
 <div align="center">
 
-# asdf-zephyr ![Build](https://github.com/nsaunders/asdf-zephyr/workflows/Build/badge.svg) ![Lint](https://github.com/nsaunders/asdf-zephyr/workflows/Lint/badge.svg)
+# asdf-zephyr [![Build](https://github.com/nsaunders/asdf-zephyr/workflows/Build/badge.svg)](https://github.com/nsaunders/asdf-zephyr/actions/workflows/build.yml) [![Lint](https://github.com/nsaunders/asdf-zephyr/workflows/Lint/badge.svg)](https://github.com/nsaunders/asdf-zephyr/actions/workflows/build.yml)
 
 [zephyr](https://github.com/coot/zephyr) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
-# Contents
-
-- [Dependencies](#dependencies)
-- [Install](#install)
-- [Why?](#why)
-- [Contributing](#contributing)
-- [License](#license)
-
 # Dependencies
 
-- `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+- `bash`, `curl`, `tar`: generic POSIX utilities
 
 # Install
 
@@ -51,8 +42,6 @@ install & manage versions.
 # Contributing
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
-
-[Thanks goes to these contributors](https://github.com/nsaunders/asdf-zephyr/graphs/contributors)!
 
 # License
 
