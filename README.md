@@ -1,6 +1,6 @@
 <div align="center">
 
-# asdf-zephyr [![Build](https://github.com/nsaunders/asdf-zephyr/workflows/Build/badge.svg)](https://github.com/nsaunders/asdf-zephyr/actions/workflows/build.yml) [![Lint](https://github.com/nsaunders/asdf-zephyr/workflows/Lint/badge.svg)](https://github.com/nsaunders/asdf-zephyr/actions/workflows/build.yml)
+# asdf-zephyr [![Build](https://github.com/nsaunders/asdf-zephyr/workflows/Build/badge.svg)](https://github.com/nsaunders/asdf-zephyr/actions/workflows/build.yml) [![Lint](https://github.com/nsaunders/asdf-zephyr/workflows/Lint/badge.svg)](https://github.com/nsaunders/asdf-zephyr/actions/workflows/lint.yml)
 
 [zephyr](https://github.com/coot/zephyr) plugin for the [asdf version manager](https://asdf-vm.com).
 
