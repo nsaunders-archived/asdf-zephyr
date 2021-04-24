@@ -2,7 +2,6 @@
 
 set -euo pipefail
 
-# TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for zephyr.
 GH_REPO="https://github.com/coot/zephyr"
 TOOL_NAME="zephyr"
 TOOL_TEST="zephyr --help"
@@ -41,8 +40,16 @@ download_release() {
   version="$1"
   filename="$2"
 
+  if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    bin="Linux"
+  elif [[ "$OSTYPE" == "darwin"* ]]; then
+    bin="macOS"
+  else
+    fail "unrecognized operating system $OSTYPE"
+  fi
+
   # TODO: Adapt the release URL convention for zephyr
-  url="$GH_REPO/archive/v${version}.tar.gz"
+  url="$GH_REPO/releases/download/v${version}/${bin}.tar.gz"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
@@ -60,6 +67,8 @@ install_version() {
   (
     mkdir -p "$install_path"
     cp -r "$ASDF_DOWNLOAD_PATH/*" "$install_path"
+
+    ls $install_path
 
     # TODO: Asert zephyr executable exists.
     local tool_cmd
